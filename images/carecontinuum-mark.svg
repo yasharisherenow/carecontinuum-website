@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">CareContinuum</title>
+  <desc id="desc">A layered orange letter C.</desc>
+  <rect width="64" height="64" rx="14" fill="#FFF6E8"/>
+  <g transform="translate(4 4) scale(.875)" fill="none" stroke-linecap="butt">
+    <path d="M55 17A23 23 0 1 0 55 47" stroke="#FF9D22" stroke-width="12"/>
+    <path d="M15 32A23 23 0 0 0 55 47" stroke="#FA4F20" stroke-width="12"/>
+  </g>
+</svg>

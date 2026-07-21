@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 92" role="img" aria-labelledby="title desc">
+  <title id="title">CareContinuum</title>
+  <desc id="desc">A layered orange letter C beside the CareContinuum wordmark, with Care in teal and a blue dot above the i.</desc>
+  <g fill="none" stroke-linecap="butt">
+    <path d="M59 28A28 28 0 1 0 59 64" stroke="#FF9D22" stroke-width="14"/>
+    <path d="M14 47A28 28 0 0 0 59 64" stroke="#FA4F20" stroke-width="14"/>
+  </g>
+  <text x="82" y="58" fill="#4D8783" font-family="Avenir Next, Avenir, Inter, Arial, sans-serif" font-size="31" font-weight="400">Care</text>
+  <text x="147" y="58" fill="#5D696B" font-family="Avenir Next, Avenir, Inter, Arial, sans-serif" font-size="31" font-weight="400">Continuum</text>
+  <circle cx="216.5" cy="34.4" r="3.25" fill="#2F80C5"/>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carecontinuum.ca/sitemap.xml

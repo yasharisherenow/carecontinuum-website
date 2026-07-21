@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Early Access | CareContinuum</title>
+    <meta name="description" content="Request early access to CareContinuum, a caregiver-first platform for a connected path from discharge through recovery.">
+    <link rel="canonical" href="https://carecontinuum.ca/early-access.html">
+    <meta property="og:title" content="Request Early Access | CareContinuum">
+    <meta property="og:description" content="Request early access to CareContinuum, a caregiver-first platform for a connected path from discharge through recovery.">
+    <meta property="og:image" content="https://carecontinuum.ca/images/carecontinuum-dashboard.png">
+    <meta property="og:url" content="https://carecontinuum.ca/early-access.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Request Early Access | CareContinuum">
+    <meta name="twitter:description" content="Request early access to CareContinuum, a caregiver-first platform for a connected path from discharge through recovery.">
+    <meta name="twitter:image" content="https://carecontinuum.ca/images/carecontinuum-dashboard.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/carecontinuum-logo-transparent.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/carecontinuum-logo-transparent.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/carecontinuum-logo-transparent.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" href="images/carecontinuum-logo-transparent.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/linux-libertine" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Albert Sans', 'system-ui', 'sans-serif'],
+                        serif: ['Linux Libertine', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        page: '#EEEAE4',
+                        accent: '#FE5E0A',
+                        'accent-hover': '#E5540A',
+                        'pampas-200': '#ded6ca',
+                        'pampas-700': '#7c5f52',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Albert Sans', system-ui, sans-serif; visibility: hidden; }
+        body.fonts-loaded { visibility: visible; }
+        .font-serif { font-family: 'Linux Libertine', Georgia, serif; }
+        ::selection { background: #FE5E0A; color: #FFFFFF; }
+        .btn-primary {
+            background: linear-gradient(to bottom, #FF7F50, #F04000);
+            border: 1px solid #E1450C;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(to bottom, #FF8F60, #E53A00);
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => document.fonts.ready.then(() => document.body.classList.add('fonts-loaded')));
+    </script>
+</head>
+<body class="bg-page text-black antialiased">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-page/80 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-8 md:px-12 h-20 flex items-center justify-center">
+            <a href="index.html"><img src="images/carecontinuum-logo-transparent.png" alt="CareContinuum" class="h-12"></a>
+        </div>
+    </nav>
+
+    <!-- Hero with Form -->
+    <section class="pt-28 sm:pt-32 pb-16 sm:pb-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-12">
+            <div class="max-w-xl mx-auto text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-semibold tracking-tight leading-[1] mb-8">
+                    Request Early Access
+                </h1>
+                <p class="text-base sm:text-lg text-black/70 leading-relaxed mb-10">
+                    Join the CareContinuum waitlist and help shape a clearer, more connected experience for caregivers after discharge.
+                </p>
+
+                <!-- Waitlist Form -->
+                <div class="mb-10">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold uppercase tracking-wide text-pampas-700 bg-pampas-200 rounded-full">Caregiver-first early access</span>
+                    <form id="earlyAccessForm" action="https://formspree.io/f/xpqvrnwl" method="POST" class="relative group w-full max-w-md mx-auto">
+                        <div class="flex flex-col gap-4">
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                placeholder="Name" aria-label="Name"
+                                class="w-full px-5 py-4 rounded-lg bg-white border border-black/20 text-black placeholder-black/50 focus:ring-2 focus:ring-accent/50 focus:border-transparent outline-none transition-all"
+                            >
+                            <input
+                                type="email"
+                                name="email"
+                                required
+                                placeholder="Email" aria-label="Email"
+                                class="w-full px-5 py-4 rounded-lg bg-white border border-black/20 text-black placeholder-black/50 focus:ring-2 focus:ring-accent/50 focus:border-transparent outline-none transition-all"
+                            >
+                            <input type="hidden" name="source" value="early-access">
+                            <select
+                                name="perspective" aria-label="Your perspective"
+                                required
+                                class="w-full px-5 py-4 rounded-lg bg-white border border-black/20 text-black/50 focus:ring-2 focus:ring-accent/50 focus:border-transparent outline-none transition-all appearance-none cursor-pointer"
+                                style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23F0EEE6%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 0.65rem auto;"
+                                onchange="this.classList.remove('text-black/50'); this.classList.add('text-black');"
+                            >
+                                <option value="" disabled selected>Your perspective</option>
+                                <option value="family-caregiver">Family caregiver</option>
+                                <option value="patient">Patient or care recipient</option>
+                                <option value="healthcare-professional">Healthcare professional</option>
+                                <option value="care-coordinator">Care coordinator</option>
+                                <option value="care-organization">Community or home-care organization</option>
+                                
+                                
+                                
+                                <option value="other">Other</option>
+                            </select>
+                            <select
+                                name="reason" aria-label="What brings you here?"
+                                required
+                                class="w-full px-5 py-4 rounded-lg bg-white border border-black/20 text-black/50 focus:ring-2 focus:ring-accent/50 focus:border-transparent outline-none transition-all appearance-none cursor-pointer"
+                                style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23F0EEE6%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 0.65rem auto;"
+                                onchange="this.classList.remove('text-black/50'); this.classList.add('text-black');"
+                            >
+                                <option value="" disabled selected>What brings you here?</option>
+                                <option value="supporting-after-discharge">Supporting someone after discharge</option>
+                                <option value="upcoming-discharge">Planning for an upcoming discharge</option>
+                                <option value="caregiver-coordination">Exploring caregiver coordination</option>
+                                <option value="professional-interest">Professional interest</option>
+                                <option value="other">Other</option>
+                                
+                            </select>
+                            <button
+                                type="submit"
+                                class="w-full px-6 py-3 text-base font-semibold btn-primary rounded-xl transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
+                            >
+                                Request Early Access
+                            </button>
+                        </div>
+                        <p id="formStatus" class="hidden mt-4 text-sm font-medium text-accent flex items-center justify-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            You're on the list. We'll be in touch with CareContinuum updates.
+                        </p>
+                    </form>
+                </div>
+
+                <script>
+                    document.getElementById('earlyAccessForm').addEventListener('submit', async function(e) {
+                        e.preventDefault();
+                        const form = e.target;
+                        const button = form.querySelector('button');
+                        const status = document.getElementById('formStatus');
+                        const originalText = button.innerText;
+                        button.innerText = 'Joining...';
+                        button.disabled = true;
+                        try {
+                            const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+                            if (!response.ok) throw new Error('Submission failed');
+                            status.classList.remove('hidden');
+                            form.reset();
+                            button.innerText = 'Joined!';
+                        } catch (error) {
+                            alert('Oops! There was a problem submitting your form');
+                            button.innerText = originalText;
+                            button.disabled = false;
+                        }
+                    });
+                </script>
+
+                <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-black/60">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        Caregiver-first
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        Professional guidance remains central
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="py-20 border-t border-black/10">
+        <div class="max-w-7xl mx-auto px-8 md:px-12">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl font-serif font-semibold mb-12 text-center">What you&rsquo;ll explore with early access</h2>
+                <div class="grid sm:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-medium mb-2">A clearer care plan</h3>
+                        <p class="text-sm text-black/60">Explore ways to organize the instructions supplied at discharge.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                            </svg>
+                        </div>
+                        <h3 class="font-medium mb-2">Connected next steps</h3>
+                        <p class="text-sm text-black/60">Help shape how appointments, responsibilities, contacts, and services appear across recovery.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="font-medium mb-2">A caregiver-first experience</h3>
+                        <p class="text-sm text-black/60">Share feedback on what caregivers need to know and do next.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-black/10">
+        <div class="max-w-7xl mx-auto px-8 md:px-12">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex flex-col items-center sm:items-start gap-2">
+                    <div class="flex flex-col items-center sm:items-start">
+                        <img src="images/carecontinuum-logo-transparent.png" alt="CareContinuum" class="h-8">
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-black/60">
+                        <a href="mailto:info@carecontinuum.ca" class="hover:text-black transition-colors">info@carecontinuum.ca</a>
+                        <span aria-hidden="true">&middot;</span>
+                        <span>&copy; 2026 CareContinuum</span>
+                    </div>
+                </div>
+                <div class="flex gap-10 text-sm text-black">
+                    <a href="privacy.html" class="hover:text-black transition-colors">Privacy</a>
+                    <a href="terms.html" class="hover:text-black transition-colors">Terms</a>
+                    <a href="careers.html" class="hover:text-black transition-colors">Careers</a>
+                    <a href="early-access.html" class="hover:text-black transition-colors">Early access</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lead attribution: inject campaign and referral parameters into every form -->
+    <script src="lead-tracking.js" defer></script>
+</body>
+</html>
+

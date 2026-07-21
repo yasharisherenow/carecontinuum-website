@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | CareContinuum</title>
+    <meta name="description" content="Learn about future opportunities to help build CareContinuum, a caregiver-first platform for connected care after discharge.">
+    <link rel="canonical" href="https://carecontinuum.ca/careers.html">
+    <meta property="og:title" content="Careers | CareContinuum">
+    <meta property="og:description" content="Learn about future opportunities to help build CareContinuum, a caregiver-first platform for connected care after discharge.">
+    <meta property="og:image" content="https://carecontinuum.ca/images/carecontinuum-dashboard.png">
+    <meta property="og:url" content="https://carecontinuum.ca/careers.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Careers | CareContinuum">
+    <meta name="twitter:description" content="Learn about future opportunities to help build CareContinuum, a caregiver-first platform for connected care after discharge.">
+    <meta name="twitter:image" content="https://carecontinuum.ca/images/carecontinuum-dashboard.png">
+    <link rel="icon" type="image/png" href="images/carecontinuum-logo-transparent.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/linux-libertine" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Linux Libertine', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        page: '#F5F3EF',
+                        accent: '#FE5E0A',
+                        'accent-hover': '#E5540A',
+                        pampas: {
+                            50: '#f9f7f4',
+                            100: '#f3efe9',
+                            200: '#ded6ca',
+                            300: '#cec3b3',
+                            400: '#b5a593',
+                            500: '#a08d79',
+                            600: '#93806d',
+                            700: '#7c5f52',
+                            800: '#665249',
+                            900: '#54453d',
+                            950: '#2d2420',
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            visibility: hidden;
+        }
+
+        body.fonts-loaded {
+            visibility: visible;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .font-serif {
+            font-family: 'Linux Libertine', Georgia, serif;
+        }
+
+        ::selection {
+            background: #FE5E0A;
+            color: #FFFFFF;
+        }
+
+        /* Nav glass effect */
+        nav {
+            transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav.scrolled {
+            background: rgba(245, 243, 239, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom-color: rgba(0, 0, 0, 0.06);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(to bottom, #FF7F50, #F04000);
+            border: 1px solid #E1450C;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            color: white;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to bottom, #FF8F60, #E53A00);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(254, 94, 10, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Scroll-triggered fade with blur */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            filter: blur(6px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                        filter 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+
+        /* Text balance for headings */
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => document.fonts.ready.then(() => document.body.classList.add('fonts-loaded')));
+    </script>
+</head>
+
+<body class="bg-[#F5F3EF] text-black antialiased overflow-x-hidden">
+
+    <!-- Hero Background Wrapper -->
+    <div class="relative overflow-hidden">
+        <!-- Halftone hero background -->
+        <div class="absolute inset-0 z-0 pointer-events-none" style="background: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0); background-size: 4px 4px;"></div>
+        <!-- Fade to page color at bottom -->
+        <div class="absolute bottom-0 left-0 right-0 h-48 z-[1] pointer-events-none" style="background: linear-gradient(to bottom, transparent, #F5F3EF);"></div>
+
+        <!-- Nav -->
+        <nav class="fixed top-0 left-0 right-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 h-16 sm:h-20 flex items-center justify-between">
+                <a href="index.html">
+                    <img src="images/carecontinuum-logo-transparent.png" alt="CareContinuum" class="h-10 sm:h-12">
+                </a>
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <a href="index.html#care-journey"
+                        class="text-sm text-black/70 hover:text-black transition-colors hidden sm:inline">Our approach</a>
+                    <a href="early-access.html"
+                        class="inline-block px-3 py-1.5 sm:px-4 sm:py-2 btn-primary text-sm font-semibold rounded-lg">Request Early Access</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="relative z-10 pt-28 sm:pt-36 pb-16 sm:pb-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-12">
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-[11px] text-stone-900 font-medium uppercase tracking-[0.25em] mb-8">Careers</p>
+                    <h1
+                        class="text-4xl sm:text-5xl md:text-[72px] font-serif font-normal tracking-tight leading-[0.92] mb-8 text-balance">
+                        Build clearer paths<br>
+                        through recovery
+                    </h1>
+                    <p class="text-lg sm:text-xl text-stone-500 font-normal leading-relaxed mb-6 max-w-xl mx-auto text-balance">
+                        We&rsquo;re working on a caregiver-first platform for the transition from hospital to home. We value thoughtful craft, responsible technology, and respect for the people coordinating care.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div><!-- End Hero Background Wrapper -->
+
+    <!-- ============================================ -->
+    <!-- Open Positions                                -->
+    <!-- ============================================ -->
+    <section class="pt-12 pb-20 sm:pb-32">
+        <div class="max-w-4xl mx-auto px-4 sm:px-8 md:px-12">
+
+            <div id="careers_availability" class="fade-up"></div>
+
+            <div class="mt-12 fade-up">
+                <p class="text-sm text-stone-400 leading-relaxed">CareContinuum is not hiring at this time.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bottom Background Wrapper -->
+    <div class="relative overflow-hidden">
+        <!-- Halftone bottom background -->
+        <div class="absolute inset-0 z-0 pointer-events-none" style="background: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0); background-size: 4px 4px;"></div>
+        <!-- Fade from page color at top -->
+        <div class="absolute top-0 left-0 right-0 h-48 z-[1] pointer-events-none" style="background: linear-gradient(to top, transparent, #F5F3EF);"></div>
+
+        <!-- Scroll animations & nav behavior -->
+        <script>
+            const nav = document.querySelector('nav');
+            let ticking = false;
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(() => {
+                        nav.classList.toggle('scrolled', window.scrollY > 24);
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.08,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        </script>
+
+        <!-- Footer -->
+        <footer class="relative z-10 py-10 mt-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-12">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                    <div class="flex flex-col items-center sm:items-start gap-2">
+                        <div class="flex flex-col items-center sm:items-start">
+                            <img src="images/carecontinuum-logo-transparent.png" alt="CareContinuum" class="h-8">
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-black/50">
+                            <a href="mailto:info@carecontinuum.ca" class="hover:text-black transition-colors">info@carecontinuum.ca</a>
+                            <span aria-hidden="true">&middot;</span>
+                            <span>&copy; 2026 CareContinuum</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center sm:justify-end gap-x-8 gap-y-2 text-sm text-black/40">
+                        <a href="index.html#care-principles" class="hover:text-black/70 transition-colors duration-200">Care principles</a>
+                        <a href="privacy.html" class="hover:text-black/70 transition-colors duration-200">Privacy</a>
+                        <a href="terms.html" class="hover:text-black/70 transition-colors duration-200">Terms</a>
+                        <a href="careers.html" class="text-black/70">Careers</a>
+                        <a href="early-access.html" class="hover:text-black/70 transition-colors duration-200">Early access</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Careers availability -->
+
+</body>
+
+</html>
+
+
